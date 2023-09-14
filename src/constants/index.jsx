@@ -70,7 +70,7 @@ export const categories = [
 export const options = {
   params: { hl: 'tr', gl: 'TR' },
   headers: {
-    'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
+    'X-RapidAPI-Key':'f93d2bdc20msh8e16de7b45efc07p19968djsn2ff706518bf5',
     'X-RapidAPI-Host': 'youtube138.p.rapidapi.com',
   },
 };

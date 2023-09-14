@@ -5,7 +5,7 @@ import Loading from '../components/Loading';
 import VideoCard from '../components/VideoCard';
 const Feed = () => {
   const { videos } = useContext(YoutubeContext);
-  console.log(videos);
+
   return (
     <div className="flex bg-[#0f0f0f] min-h-screen text-white">
       <SideNav />
