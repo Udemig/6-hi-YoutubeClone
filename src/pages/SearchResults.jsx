@@ -21,16 +21,16 @@ const SearchResults = () => {
     <div className="flex bg-[#0f0f0f] text-white  min-h-[100vh]">
       <SideNav />
 
- <div className="flex flex-col gap-20 p-10 w-full">
- {!searchResults ? (
-<Loading/>
-      ) : (
-        searchResults?.contents?.map((item, i) => {
-        //  console.log(item)
-          return <VideoCard video={item?.video} key={i} />;
-        })
-      )}
- </div>
+      <div className="flex flex-col gap-20 p-10 w-full">
+        {!searchResults ? (
+          <Loading />
+        ) : (
+          searchResults?.contents?.map((item, i) => {
+            //  console.log(item)
+            return <VideoCard video={item?.video} key={i} />;
+          })
+        )}
+      </div>
     </div>
   );
 };
